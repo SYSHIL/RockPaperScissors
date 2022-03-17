@@ -11,11 +11,11 @@ function gameTime(userChoice){
     let tie = "It's a tie !";
     let invalidChoice = "Invalid choice !";
 
-    if(computerChoice==1){
-        if(userChoice==2)
-            return computerVictory;
-        else if(userChoice==3)
+    if(computerChoice==1){//computer chooses rock
+        if(userChoice==2) // user chooses paper
             return userVictory;
+        else if(userChoice==3)
+            return computerVictory;
         else{
             return tie;
         }
