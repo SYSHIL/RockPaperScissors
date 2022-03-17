@@ -1,16 +1,15 @@
 //function randomly returns rock paper or scissors
+
 function computerPlay(){
     return (Math.floor(Math.random()*3)+1);
 }
-function gameTime(){
+function gameTime(userChoice){
+    let computerChoice = computerPlay();
+    //console.log(computerChoice,userChoice);
     let computerVictory = "Computer wins !";
     let userVictory = "User wins !";
     let tie = "It's a tie !";
     let invalidChoice = "Invalid choice !";
-
-    if(userChoice > 3 || userChoice < 1){
-        return invalidChoice;
-    }
 
     if(computerChoice==1){
         if(userChoice==2)
@@ -43,25 +42,19 @@ function gameTime(){
         }
     }
 }
-
+let gameResult;
 function playRound(){
-    userChoice = this.dataset.key;
-    computerChoice = computerPlay();
-    alert(gameTime(userChoice,computerChoice));
+    let userChoice = this.dataset.key;
+    gameResult = gameTime(userChoice);
+    const body = document.querySelector('body');
+    const result = document.createElement("p");
+    result.innerText = gameResult;
+    body.appendChild(result);
 }
-/*function play(noOfRounds){
-    for(let i=0;i<noOfRounds;i++){
-    let userChoice = prompt('Enter 1 for stone, 2 for paper, 3 for scissors');
-    let computerChoice = computerPlay();
-    alert(playround(computerChoice,userChoice));
-    }
-}
-play(noOfRounds);
-alert("Thank you for playing !");
-*/
 
 const options = document.querySelectorAll(".UI button");
 options.forEach(option => {
     option.addEventListener("click",playRound);
-
 });
+
+
