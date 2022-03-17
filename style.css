@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    flex-direction: column;
+    padding : 20px;
+}
+.header{
+    display: flex;
+    align-self: center;
+}
+.UI{
+    display: flex;
+    flex-direction: row;
+    height:200px;
+    margin : 20px 80px 20px 80px;
+    align-content: center;
+    gap : 100px;
+    justify-content: center;
+}
+.UI  button{
+    display: flex;
+    width : 200px;
+    border-radius: 10px;
+    outline: none;
+    height : 100px;
+    flex-direction: row;
+    justify-content: center;
+    flex : 0 0 auto;
+}
+.UI button:hover{
+    border-color: aqua;
+}
+.UI img{
+    width : 100%;
+    height: 100%;
+}
+
