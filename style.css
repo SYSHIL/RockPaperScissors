@@ -2,7 +2,7 @@ body{
     display: flex;
     flex-direction: column;
     padding : 20px;
-    background-color: rgba(76, 76, 82, 0.199);
+    background-color: rgb(233, 229, 229);
 }
 .header{
     align-self: center;
@@ -23,7 +23,6 @@ body{
 }
 .UI button{
     border-radius: 40px;
-    background-color: rgba(255, 255, 255, 0.616);
 }
 .UI  button img{
     width : 200px;
@@ -42,10 +41,9 @@ body{
     display: flex;
     flex-direction: row;
     height: 300px;
-    width: 100%;
     padding : 50px;
     gap: 50px;
-    background-color: black;
+    background-color: rgb(233, 229, 229);
     border-radius: 60px;
 
 }
@@ -53,17 +51,24 @@ body{
     display: flex;
     flex-direction: column;
     gap: 2px;
-    align-self: stretch;
-    background-color: white;
+    background-color: aquamarine;
     width: 400px;
     border-radius: 10px;
+    padding :  10px;
 }
+.side h2, .score h2{
+    text-align: center;
+    margin : 0;
+    align-self: flex-start;
+}
+
 .score{
+
     display: flex;
     flex-direction: column;
-    width: 600px;
-    background-color: beige;
-    padding : 40px;
+    width: 400px;
+    background-color: aquamarine;
+    padding : 10px;
     gap : 10px;
     border-radius: 10px;
 }
