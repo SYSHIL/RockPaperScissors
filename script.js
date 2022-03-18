@@ -57,4 +57,3 @@ options.forEach(option => {
     option.addEventListener("click",playRound);
 });
 
-

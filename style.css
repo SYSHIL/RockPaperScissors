@@ -17,20 +17,18 @@ body{
     display: flex;
     flex-direction: row;
     height:200px;
-    margin : 20px 80px 20px 80px;
-    align-content: center;
     gap : 100px;
     justify-content: center;
+    padding : 50px;
 }
-.UI  button{
-    display: flex;
+.UI button{
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.616);
+}
+.UI  button img{
     width : 200px;
-    border-radius: 10px;
-    outline: none;
     height : 100px;
-    flex-direction: row;
-    justify-content: center;
-    flex : 0 0 auto;
+    flex : 1 0 auto;
 }
 .UI button:hover{
     border-color: aqua;
@@ -39,4 +37,33 @@ body{
     width : 100%;
     height: 100%;
 }
+.results{
+    flex : 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    width: 100%;
+    padding : 50px;
+    gap: 50px;
+    background-color: black;
+    border-radius: 60px;
 
+}
+.side{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-self: stretch;
+    background-color: white;
+    width: 400px;
+    border-radius: 10px;
+}
+.score{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    background-color: beige;
+    padding : 40px;
+    gap : 10px;
+    border-radius: 10px;
+}
